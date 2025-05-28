@@ -1,0 +1,80 @@
+{
+  "expo": {
+    "name": "NVWIndia",
+    "slug": "NVWIndia",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./src/assets/images/icon.png",
+    "scheme": "NVWIndia",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "fonts": [
+      {
+        "fontFamily": "Ubuntu",
+        "fontWeight": "normal",
+        "src": "./src/assets/fonts/Ubuntu/Ubuntu-Regular.ttf"
+      },
+      {
+        "fontFamily": "Ubuntu",
+        "fontWeight": "bold",
+        "src": "./src/assets/fonts/Ubuntu/Ubuntu-Bold.ttf"
+      },
+      {
+        "fontFamily": "Ubuntu",
+        "fontWeight": "italic",
+        "src": "./src/assets/fonts/Ubuntu/Ubuntu-Italic.ttf"
+      },
+      {
+        "fontFamily": "Ubuntu",
+        "fontWeight": "light",
+        "src": "./src/assets/fonts/Ubuntu/Ubuntu-Light.ttf"
+      }
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.amitkumarsingh.NVWIndia",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSLocationWhenInUseUsageDescription": "We use your location to show services near you."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.amitkumarsingh.NVWIndia",
+      "permissions": ["android.permission.RECORD_AUDIO"]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./src/assets/images/icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./src/assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "2f26860b-0587-4a7b-99bc-3e2164fb4b36"
+      }
+    }
+  }
+}
